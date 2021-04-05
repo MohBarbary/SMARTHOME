@@ -8,6 +8,10 @@ Features of this project:
 - SPI communication
 - Controlling actuators using GPIO
 - LCD control
+- Layered Architecture
+- High quality code
+- Written with best practices
+- Documented using Doxygen
 
 # Thank you so much for taking the time to check out my repository.
                                                          Thank you,
