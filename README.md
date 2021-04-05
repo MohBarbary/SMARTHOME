@@ -10,4 +10,5 @@ Features of this project:
 - LCD control
 
 # Thank you so much for taking the time to check out my repository.
+                                                         Thank you,
                                                          Barbary.
