@@ -1,0 +1,66 @@
+\hypertarget{_h_a_l___l_c_d__private_8h}{}\doxysection{HAL/\+LCD/\+HAL\+\_\+\+LCD\+\_\+private.h File Reference}
+\label{_h_a_l___l_c_d__private_8h}\index{HAL/LCD/HAL\_LCD\_private.h@{HAL/LCD/HAL\_LCD\_private.h}}
+
+
+This is the h file that is used to store the private variables and declarations of our LCD16x2 Driver. !\+PLEASE DON\textquotesingle{}T FORGET TO USE DELAYS!  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a2d54ebb12cbfe691bd96f3b21b2db1ab}\label{_h_a_l___l_c_d__private_8h_a2d54ebb12cbfe691bd96f3b21b2db1ab}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+CTRL\+\_\+\+PORT}~(PORTB)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_aedc0751aadfe5475086609638b85628d}\label{_h_a_l___l_c_d__private_8h_aedc0751aadfe5475086609638b85628d}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+RS\+\_\+\+PIN}~(PIN1)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_ab7e58e469b7ef38eb33013a64c5935b7}\label{_h_a_l___l_c_d__private_8h_ab7e58e469b7ef38eb33013a64c5935b7}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+RW\+\_\+\+PIN}~(PIN2)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_adc48b4100386d38d99ab281c233f39af}\label{_h_a_l___l_c_d__private_8h_adc48b4100386d38d99ab281c233f39af}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+EN\+\_\+\+PIN}~(PIN3)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a0c098df2694cb6290137c0f9683b1c78}\label{_h_a_l___l_c_d__private_8h_a0c098df2694cb6290137c0f9683b1c78}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+DATA\+\_\+\+PORT}~(PORTA)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a3cdae8d386d4bd8decf1158b0ea127ef}\label{_h_a_l___l_c_d__private_8h_a3cdae8d386d4bd8decf1158b0ea127ef}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D0\+\_\+\+PIN}~(\mbox{\hyperlink{_m_c_a_l___g_p_i_o__interface_8h_a8909e4cc8d1f05aeb73943042144abdf}{PIN0}})
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a81e0302e439193dc477bc129d980da05}\label{_h_a_l___l_c_d__private_8h_a81e0302e439193dc477bc129d980da05}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D1\+\_\+\+PIN}~(PIN1)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_aea423ef5b50a412646a62d28050e0cb2}\label{_h_a_l___l_c_d__private_8h_aea423ef5b50a412646a62d28050e0cb2}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D2\+\_\+\+PIN}~(PIN2)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a79c66057727db5ce8566d66f01329f25}\label{_h_a_l___l_c_d__private_8h_a79c66057727db5ce8566d66f01329f25}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D3\+\_\+\+PIN}~(PIN3)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a62b21299651e0fdb706f0f4362c3334c}\label{_h_a_l___l_c_d__private_8h_a62b21299651e0fdb706f0f4362c3334c}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D4\+\_\+\+PIN}~(PIN4)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_a63792e7687e672541f8dc46d48601fbe}\label{_h_a_l___l_c_d__private_8h_a63792e7687e672541f8dc46d48601fbe}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D5\+\_\+\+PIN}~(PIN5)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_ae87af41eca3e2bdde81550d21c58dbc3}\label{_h_a_l___l_c_d__private_8h_ae87af41eca3e2bdde81550d21c58dbc3}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D6\+\_\+\+PIN}~(PIN6)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__private_8h_ad01e3e094959f78cba262ba6534c7d11}\label{_h_a_l___l_c_d__private_8h_ad01e3e094959f78cba262ba6534c7d11}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+D7\+\_\+\+PIN}~(PIN7)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the h file that is used to store the private variables and declarations of our LCD16x2 Driver. !\+PLEASE DON\textquotesingle{}T FORGET TO USE DELAYS! 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/01-\/2021 10\+:19\+:20 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}

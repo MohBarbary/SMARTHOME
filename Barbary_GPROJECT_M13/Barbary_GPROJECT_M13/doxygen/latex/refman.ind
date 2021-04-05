@@ -1,0 +1,180 @@
+\begin{theindex}
+
+  \item {APP/APP\_SMARTHOME\_interface.h}, \hyperpage{3}
+  \item {APP/APP\_SMARTHOME\_program.c}, \hyperpage{6}
+  \item {APP\_authority}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{4}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{8}
+  \item {APP\_powerGarageDoor}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{5}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{8}
+  \item {APP\_powerLeds}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{5}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{8}
+  \item {APP\_recvCMD}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{5}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{9}
+  \item {APP\_sendCMD}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{5}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{9}
+  \item {APP\_SMARTHOME\_interface.h}
+    \subitem {APP\_authority}, \hyperpage{4}
+    \subitem {APP\_powerGarageDoor}, \hyperpage{5}
+    \subitem {APP\_powerLeds}, \hyperpage{5}
+    \subitem {APP\_recvCMD}, \hyperpage{5}
+    \subitem {APP\_sendCMD}, \hyperpage{5}
+    \subitem {APP\_useCursorLCD}, \hyperpage{6}
+    \subitem {APP\_useWriteLCD}, \hyperpage{6}
+  \item {APP\_SMARTHOME\_program.c}
+    \subitem {APP\_authority}, \hyperpage{8}
+    \subitem {APP\_powerGarageDoor}, \hyperpage{8}
+    \subitem {APP\_powerLeds}, \hyperpage{8}
+    \subitem {APP\_recvCMD}, \hyperpage{9}
+    \subitem {APP\_sendCMD}, \hyperpage{9}
+    \subitem {APP\_useCursorLCD}, \hyperpage{9}
+    \subitem {APP\_useWriteLCD}, \hyperpage{10}
+  \item {APP\_useCursorLCD}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{6}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{9}
+  \item {APP\_useWriteLCD}
+    \subitem {APP\_SMARTHOME\_interface.h}, \hyperpage{6}
+    \subitem {APP\_SMARTHOME\_program.c}, \hyperpage{10}
+
+  \indexspace
+
+  \item {HAL/BLUETOOTH/HAL\_BLUETOOTH\_interface.h}, \hyperpage{10}
+  \item {HAL/BLUETOOTH/HAL\_BLUETOOTH\_program.c}, \hyperpage{11}
+  \item {HAL/LCD/HAL\_LCD\_interface.h}, \hyperpage{13}
+  \item {HAL/LCD/HAL\_LCD\_private.h}, \hyperpage{15}
+  \item {HAL/LCD/HAL\_LCD\_program.c}, \hyperpage{16}
+  \item {HAL/LED/HAL\_LED\_interface.h}, \hyperpage{18}
+  \item {HAL/LED/HAL\_LED\_program.c}, \hyperpage{19}
+  \item {HAL\_BLUETOOTH\_interface.h}
+    \subitem {HAL\_establishBluetooth}, \hyperpage{11}
+    \subitem {HAL\_recvBluetooth}, \hyperpage{11}
+  \item {HAL\_BLUETOOTH\_program.c}
+    \subitem {HAL\_establishBluetooth}, \hyperpage{12}
+    \subitem {HAL\_recvBluetooth}, \hyperpage{12}
+  \item {HAL\_establishBluetooth}
+    \subitem {HAL\_BLUETOOTH\_interface.h}, \hyperpage{11}
+    \subitem {HAL\_BLUETOOTH\_program.c}, \hyperpage{12}
+  \item {HAL\_LCD\_displayCharacter}
+    \subitem {HAL\_LCD\_interface.h}, \hyperpage{14}
+    \subitem {HAL\_LCD\_program.c}, \hyperpage{17}
+  \item {HAL\_LCD\_displayString}
+    \subitem {HAL\_LCD\_interface.h}, \hyperpage{14}
+    \subitem {HAL\_LCD\_program.c}, \hyperpage{17}
+  \item {HAL\_LCD\_init}
+    \subitem {HAL\_LCD\_interface.h}, \hyperpage{15}
+    \subitem {HAL\_LCD\_program.c}, \hyperpage{18}
+  \item {HAL\_LCD\_interface.h}
+    \subitem {HAL\_LCD\_displayCharacter}, \hyperpage{14}
+    \subitem {HAL\_LCD\_displayString}, \hyperpage{14}
+    \subitem {HAL\_LCD\_init}, \hyperpage{15}
+    \subitem {HAL\_LCD\_putAtLoc}, \hyperpage{15}
+  \item {HAL\_LCD\_program.c}
+    \subitem {HAL\_LCD\_displayCharacter}, \hyperpage{17}
+    \subitem {HAL\_LCD\_displayString}, \hyperpage{17}
+    \subitem {HAL\_LCD\_init}, \hyperpage{18}
+    \subitem {HAL\_LCD\_putAtLoc}, \hyperpage{18}
+  \item {HAL\_LCD\_putAtLoc}
+    \subitem {HAL\_LCD\_interface.h}, \hyperpage{15}
+    \subitem {HAL\_LCD\_program.c}, \hyperpage{18}
+  \item {HAL\_LED\_interface.h}
+    \subitem {HAL\_LED\_power}, \hyperpage{19}
+  \item {HAL\_LED\_power}
+    \subitem {HAL\_LED\_interface.h}, \hyperpage{19}
+    \subitem {HAL\_LED\_program.c}, \hyperpage{20}
+  \item {HAL\_LED\_program.c}
+    \subitem {HAL\_LED\_power}, \hyperpage{20}
+  \item {HAL\_recvBluetooth}
+    \subitem {HAL\_BLUETOOTH\_interface.h}, \hyperpage{11}
+    \subitem {HAL\_BLUETOOTH\_program.c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {LSTD/LSTD\_BITMATH.h}, \hyperpage{20}
+  \item {LSTD/LSTD\_TYPES.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{23}
+  \item {main.c}, \hyperpage{22}
+    \subitem {main}, \hyperpage{23}
+  \item {MCAL/GPIO/MCAL\_GPIO\_interface.h}, \hyperpage{23}
+  \item {MCAL/GPIO/MCAL\_GPIO\_private.h}, \hyperpage{26}
+  \item {MCAL/GPIO/MCAL\_GPIO\_program.c}, \hyperpage{27}
+  \item {MCAL/SPI/MCAL\_SPI\_interface.h}, \hyperpage{30}
+  \item {MCAL/SPI/MCAL\_SPI\_private.h}, \hyperpage{32}
+  \item {MCAL/SPI/MCAL\_SPI\_program.c}, \hyperpage{33}
+  \item {MCAL/UART/MCAL\_UART\_interface.h}, \hyperpage{35}
+  \item {MCAL/UART/MCAL\_UART\_private.h}, \hyperpage{37}
+  \item {MCAL/UART/MCAL\_UART\_program.c}, \hyperpage{38}
+  \item {MCAL\_GPIO\_GetPinState}
+    \subitem {MCAL\_GPIO\_interface.h}, \hyperpage{24}
+    \subitem {MCAL\_GPIO\_program.c}, \hyperpage{28}
+  \item {MCAL\_GPIO\_interface.h}
+    \subitem {MCAL\_GPIO\_GetPinState}, \hyperpage{24}
+    \subitem {MCAL\_GPIO\_PinMode}, \hyperpage{24}
+    \subitem {MCAL\_GPIO\_PinState}, \hyperpage{25}
+    \subitem {MCAL\_GPIO\_TogglePin}, \hyperpage{25}
+  \item {MCAL\_GPIO\_PinMode}
+    \subitem {MCAL\_GPIO\_interface.h}, \hyperpage{24}
+    \subitem {MCAL\_GPIO\_program.c}, \hyperpage{28}
+  \item {MCAL\_GPIO\_PinState}
+    \subitem {MCAL\_GPIO\_interface.h}, \hyperpage{25}
+    \subitem {MCAL\_GPIO\_program.c}, \hyperpage{28}
+  \item {MCAL\_GPIO\_private.h}
+    \subitem {MCAL\_PORTA}, \hyperpage{26}
+  \item {MCAL\_GPIO\_program.c}
+    \subitem {MCAL\_GPIO\_GetPinState}, \hyperpage{28}
+    \subitem {MCAL\_GPIO\_PinMode}, \hyperpage{28}
+    \subitem {MCAL\_GPIO\_PinState}, \hyperpage{28}
+    \subitem {MCAL\_GPIO\_TogglePin}, \hyperpage{30}
+  \item {MCAL\_GPIO\_TogglePin}
+    \subitem {MCAL\_GPIO\_interface.h}, \hyperpage{25}
+    \subitem {MCAL\_GPIO\_program.c}, \hyperpage{30}
+  \item {MCAL\_PORTA}
+    \subitem {MCAL\_GPIO\_private.h}, \hyperpage{26}
+  \item {MCAL\_SPI\_init}
+    \subitem {MCAL\_SPI\_interface.h}, \hyperpage{31}
+    \subitem {MCAL\_SPI\_program.c}, \hyperpage{34}
+  \item {MCAL\_SPI\_interface.h}
+    \subitem {MCAL\_SPI\_init}, \hyperpage{31}
+    \subitem {MCAL\_SPI\_masterSendRecvByte}, \hyperpage{32}
+    \subitem {MCAL\_SPI\_slaveSendRecvByte}, \hyperpage{32}
+  \item {MCAL\_SPI\_masterSendRecvByte}
+    \subitem {MCAL\_SPI\_interface.h}, \hyperpage{32}
+    \subitem {MCAL\_SPI\_program.c}, \hyperpage{34}
+  \item {MCAL\_SPI\_program.c}
+    \subitem {MCAL\_SPI\_init}, \hyperpage{34}
+    \subitem {MCAL\_SPI\_masterSendRecvByte}, \hyperpage{34}
+    \subitem {MCAL\_SPI\_slaveSendRecvByte}, \hyperpage{35}
+  \item {MCAL\_SPI\_slaveSendRecvByte}
+    \subitem {MCAL\_SPI\_interface.h}, \hyperpage{32}
+    \subitem {MCAL\_SPI\_program.c}, \hyperpage{35}
+  \item {MCAL\_UART\_init}
+    \subitem {MCAL\_UART\_interface.h}, \hyperpage{36}
+    \subitem {MCAL\_UART\_program.c}, \hyperpage{39}
+  \item {MCAL\_UART\_interface.h}
+    \subitem {MCAL\_UART\_init}, \hyperpage{36}
+    \subitem {MCAL\_UART\_recvByte}, \hyperpage{36}
+    \subitem {MCAL\_UART\_sendByte}, \hyperpage{37}
+    \subitem {MCAL\_UART\_sendStream}, \hyperpage{37}
+  \item {MCAL\_UART\_program.c}
+    \subitem {MCAL\_UART\_init}, \hyperpage{39}
+    \subitem {MCAL\_UART\_recvByte}, \hyperpage{39}
+    \subitem {MCAL\_UART\_sendByte}, \hyperpage{40}
+    \subitem {MCAL\_UART\_sendStream}, \hyperpage{40}
+  \item {MCAL\_UART\_recvByte}
+    \subitem {MCAL\_UART\_interface.h}, \hyperpage{36}
+    \subitem {MCAL\_UART\_program.c}, \hyperpage{39}
+  \item {MCAL\_UART\_sendByte}
+    \subitem {MCAL\_UART\_interface.h}, \hyperpage{37}
+    \subitem {MCAL\_UART\_program.c}, \hyperpage{40}
+  \item {MCAL\_UART\_sendStream}
+    \subitem {MCAL\_UART\_interface.h}, \hyperpage{37}
+    \subitem {MCAL\_UART\_program.c}, \hyperpage{40}
+
+\end{theindex}

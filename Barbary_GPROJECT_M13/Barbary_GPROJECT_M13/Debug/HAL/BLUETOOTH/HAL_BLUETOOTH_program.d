@@ -1,0 +1,16 @@
+HAL/BLUETOOTH/HAL_BLUETOOTH_program.d \
+ HAL/BLUETOOTH/HAL_BLUETOOTH_program.o: \
+ ../HAL/BLUETOOTH/HAL_BLUETOOTH_program.c ../LSTD/LSTD_TYPES.h \
+ ../LSTD/LSTD_BITMATH.h ../MCAL/UART/MCAL_UART_interface.h \
+ ../MCAL/GPIO/MCAL_GPIO_interface.h \
+ ../HAL/BLUETOOTH/HAL_BLUETOOTH_interface.h
+
+../LSTD/LSTD_TYPES.h:
+
+../LSTD/LSTD_BITMATH.h:
+
+../MCAL/UART/MCAL_UART_interface.h:
+
+../MCAL/GPIO/MCAL_GPIO_interface.h:
+
+../HAL/BLUETOOTH/HAL_BLUETOOTH_interface.h:

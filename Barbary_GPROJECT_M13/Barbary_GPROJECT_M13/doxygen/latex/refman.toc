@@ -1,0 +1,115 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}File Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}File List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Documentation}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}APP/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}APP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SMARTHOME\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Function Documentation}{4}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}APP\_authority()}{4}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}APP\_powerGarageDoor()}{5}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}APP\_powerLeds()}{5}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}APP\_recvCMD()}{5}{subsubsection.2.1.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}APP\_sendCMD()}{6}{subsubsection.2.1.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.2.6}APP\_useCursorLCD()}{6}{subsubsection.2.1.2.6}%
+\contentsline {subsubsection}{\numberline {2.1.2.7}APP\_useWriteLCD()}{6}{subsubsection.2.1.2.7}%
+\contentsline {section}{\numberline {2.2}APP/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}APP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SMARTHOME\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Function Documentation}{8}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}APP\_authority()}{8}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}APP\_powerGarageDoor()}{8}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}APP\_powerLeds()}{8}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}APP\_recvCMD()}{9}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}APP\_sendCMD()}{9}{subsubsection.2.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.2.6}APP\_useCursorLCD()}{9}{subsubsection.2.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.2.7}APP\_useWriteLCD()}{10}{subsubsection.2.2.2.7}%
+\contentsline {section}{\numberline {2.3}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLUETOOTH/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLUETOOTH\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Function Documentation}{11}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}HAL\_establishBluetooth()}{11}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}HAL\_recvBluetooth()}{11}{subsubsection.2.3.2.2}%
+\contentsline {section}{\numberline {2.4}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLUETOOTH/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLUETOOTH\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Function Documentation}{12}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}HAL\_establishBluetooth()}{12}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}HAL\_recvBluetooth()}{12}{subsubsection.2.4.2.2}%
+\contentsline {section}{\numberline {2.5}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Function Documentation}{14}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}HAL\_LCD\_displayCharacter()}{14}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}HAL\_LCD\_displayString()}{14}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}HAL\_LCD\_init()}{15}{subsubsection.2.5.2.3}%
+\contentsline {subsubsection}{\numberline {2.5.2.4}HAL\_LCD\_putAtLoc()}{15}{subsubsection.2.5.2.4}%
+\contentsline {section}{\numberline {2.6}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{16}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LCD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{16}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Detailed Description}{17}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Function Documentation}{17}{subsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}HAL\_LCD\_displayCharacter()}{17}{subsubsection.2.7.2.1}%
+\contentsline {subsubsection}{\numberline {2.7.2.2}HAL\_LCD\_displayString()}{17}{subsubsection.2.7.2.2}%
+\contentsline {subsubsection}{\numberline {2.7.2.3}HAL\_LCD\_init()}{18}{subsubsection.2.7.2.3}%
+\contentsline {subsubsection}{\numberline {2.7.2.4}HAL\_LCD\_putAtLoc()}{18}{subsubsection.2.7.2.4}%
+\contentsline {section}{\numberline {2.8}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{18}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Detailed Description}{18}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Function Documentation}{19}{subsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.2.1}HAL\_LED\_power()}{19}{subsubsection.2.8.2.1}%
+\contentsline {section}{\numberline {2.9}HAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{19}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Detailed Description}{20}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Function Documentation}{20}{subsection.2.9.2}%
+\contentsline {subsubsection}{\numberline {2.9.2.1}HAL\_LED\_power()}{20}{subsubsection.2.9.2.1}%
+\contentsline {section}{\numberline {2.10}LSTD/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BITMATH.h File Reference}{20}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Detailed Description}{21}{subsection.2.10.1}%
+\contentsline {section}{\numberline {2.11}LSTD/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TYPES.h File Reference}{21}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Detailed Description}{21}{subsection.2.11.1}%
+\contentsline {section}{\numberline {2.12}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{22}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Detailed Description}{22}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Function Documentation}{23}{subsection.2.12.2}%
+\contentsline {subsubsection}{\numberline {2.12.2.1}main()}{23}{subsubsection.2.12.2.1}%
+\contentsline {section}{\numberline {2.13}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{23}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Detailed Description}{24}{subsection.2.13.1}%
+\contentsline {subsection}{\numberline {2.13.2}Function Documentation}{24}{subsection.2.13.2}%
+\contentsline {subsubsection}{\numberline {2.13.2.1}MCAL\_GPIO\_GetPinState()}{24}{subsubsection.2.13.2.1}%
+\contentsline {subsubsection}{\numberline {2.13.2.2}MCAL\_GPIO\_PinMode()}{24}{subsubsection.2.13.2.2}%
+\contentsline {subsubsection}{\numberline {2.13.2.3}MCAL\_GPIO\_PinState()}{25}{subsubsection.2.13.2.3}%
+\contentsline {subsubsection}{\numberline {2.13.2.4}MCAL\_GPIO\_TogglePin()}{25}{subsubsection.2.13.2.4}%
+\contentsline {section}{\numberline {2.14}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{26}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Detailed Description}{26}{subsection.2.14.1}%
+\contentsline {subsection}{\numberline {2.14.2}Macro Definition Documentation}{26}{subsection.2.14.2}%
+\contentsline {subsubsection}{\numberline {2.14.2.1}MCAL\_PORTA}{27}{subsubsection.2.14.2.1}%
+\contentsline {section}{\numberline {2.15}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{27}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Detailed Description}{27}{subsection.2.15.1}%
+\contentsline {subsection}{\numberline {2.15.2}Function Documentation}{28}{subsection.2.15.2}%
+\contentsline {subsubsection}{\numberline {2.15.2.1}MCAL\_GPIO\_GetPinState()}{28}{subsubsection.2.15.2.1}%
+\contentsline {subsubsection}{\numberline {2.15.2.2}MCAL\_GPIO\_PinMode()}{28}{subsubsection.2.15.2.2}%
+\contentsline {subsubsection}{\numberline {2.15.2.3}MCAL\_GPIO\_PinState()}{28}{subsubsection.2.15.2.3}%
+\contentsline {subsubsection}{\numberline {2.15.2.4}MCAL\_GPIO\_TogglePin()}{30}{subsubsection.2.15.2.4}%
+\contentsline {section}{\numberline {2.16}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{30}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Detailed Description}{31}{subsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16.2}Function Documentation}{31}{subsection.2.16.2}%
+\contentsline {subsubsection}{\numberline {2.16.2.1}MCAL\_SPI\_init()}{31}{subsubsection.2.16.2.1}%
+\contentsline {subsubsection}{\numberline {2.16.2.2}MCAL\_SPI\_masterSendRecvByte()}{32}{subsubsection.2.16.2.2}%
+\contentsline {subsubsection}{\numberline {2.16.2.3}MCAL\_SPI\_slaveSendRecvByte()}{32}{subsubsection.2.16.2.3}%
+\contentsline {section}{\numberline {2.17}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{32}{section.2.17}%
+\contentsline {subsection}{\numberline {2.17.1}Detailed Description}{32}{subsection.2.17.1}%
+\contentsline {section}{\numberline {2.18}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SPI\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{33}{section.2.18}%
+\contentsline {subsection}{\numberline {2.18.1}Detailed Description}{34}{subsection.2.18.1}%
+\contentsline {subsection}{\numberline {2.18.2}Function Documentation}{34}{subsection.2.18.2}%
+\contentsline {subsubsection}{\numberline {2.18.2.1}MCAL\_SPI\_init()}{34}{subsubsection.2.18.2.1}%
+\contentsline {subsubsection}{\numberline {2.18.2.2}MCAL\_SPI\_masterSendRecvByte()}{34}{subsubsection.2.18.2.2}%
+\contentsline {subsubsection}{\numberline {2.18.2.3}MCAL\_SPI\_slaveSendRecvByte()}{35}{subsubsection.2.18.2.3}%
+\contentsline {section}{\numberline {2.19}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{35}{section.2.19}%
+\contentsline {subsection}{\numberline {2.19.1}Detailed Description}{36}{subsection.2.19.1}%
+\contentsline {subsection}{\numberline {2.19.2}Function Documentation}{36}{subsection.2.19.2}%
+\contentsline {subsubsection}{\numberline {2.19.2.1}MCAL\_UART\_init()}{36}{subsubsection.2.19.2.1}%
+\contentsline {subsubsection}{\numberline {2.19.2.2}MCAL\_UART\_recvByte()}{36}{subsubsection.2.19.2.2}%
+\contentsline {subsubsection}{\numberline {2.19.2.3}MCAL\_UART\_sendByte()}{37}{subsubsection.2.19.2.3}%
+\contentsline {subsubsection}{\numberline {2.19.2.4}MCAL\_UART\_sendStream()}{37}{subsubsection.2.19.2.4}%
+\contentsline {section}{\numberline {2.20}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{37}{section.2.20}%
+\contentsline {subsection}{\numberline {2.20.1}Detailed Description}{37}{subsection.2.20.1}%
+\contentsline {section}{\numberline {2.21}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UART\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{38}{section.2.21}%
+\contentsline {subsection}{\numberline {2.21.1}Detailed Description}{39}{subsection.2.21.1}%
+\contentsline {subsection}{\numberline {2.21.2}Function Documentation}{39}{subsection.2.21.2}%
+\contentsline {subsubsection}{\numberline {2.21.2.1}MCAL\_UART\_init()}{39}{subsubsection.2.21.2.1}%
+\contentsline {subsubsection}{\numberline {2.21.2.2}MCAL\_UART\_recvByte()}{39}{subsubsection.2.21.2.2}%
+\contentsline {subsubsection}{\numberline {2.21.2.3}MCAL\_UART\_sendByte()}{40}{subsubsection.2.21.2.3}%
+\contentsline {subsubsection}{\numberline {2.21.2.4}MCAL\_UART\_sendStream()}{40}{subsubsection.2.21.2.4}%
+\contentsline {chapter}{Index}{41}{section*.33}%

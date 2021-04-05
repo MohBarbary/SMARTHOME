@@ -1,0 +1,69 @@
+\hypertarget{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c}{}\doxysection{HAL/\+BLUETOOTH/\+HAL\+\_\+\+BLUETOOTH\+\_\+program.c File Reference}
+\label{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c}\index{HAL/BLUETOOTH/HAL\_BLUETOOTH\_program.c@{HAL/BLUETOOTH/HAL\_BLUETOOTH\_program.c}}
+
+
+Program file that contains the implementation of the functions defined in the header file for the BLUETOOTH DRIVER.  
+
+
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+UART\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HAL\+\_\+\+BLUETOOTH\+\_\+interface.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a0e92e70eabc0c7d95c547081661a7f1f}{HAL\+\_\+establish\+Bluetooth}} (u16\+\_\+t au16\+\_\+baud\+Rate)
+\begin{DoxyCompactList}\small\item\em Establishes a Bluetooth connection with a given BAUD RATE. (!\+PLEASE USE THE DEFAULT BAUD-\/\+RATE FOR BLUETOOTH!) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a4fcda22d69cf54ef48249685e9fef27f}{HAL\+\_\+recv\+Bluetooth}} (u8\+\_\+t $\ast$pu8\+\_\+data\+Holder)
+\begin{DoxyCompactList}\small\item\em Receive data from an already established BLUETOOTH connection with a given device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file that contains the implementation of the functions defined in the header file for the BLUETOOTH DRIVER. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+03-\/04-\/2021 2\+:44\+:53 AM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a0e92e70eabc0c7d95c547081661a7f1f}\label{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a0e92e70eabc0c7d95c547081661a7f1f}} 
+\index{HAL\_BLUETOOTH\_program.c@{HAL\_BLUETOOTH\_program.c}!HAL\_establishBluetooth@{HAL\_establishBluetooth}}
+\index{HAL\_establishBluetooth@{HAL\_establishBluetooth}!HAL\_BLUETOOTH\_program.c@{HAL\_BLUETOOTH\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_establishBluetooth()}{HAL\_establishBluetooth()}}
+{\footnotesize\ttfamily void HAL\+\_\+establish\+Bluetooth (\begin{DoxyParamCaption}\item[{u16\+\_\+t}]{au16\+\_\+baud\+Rate }\end{DoxyParamCaption})}
+
+
+
+Establishes a Bluetooth connection with a given BAUD RATE. (!\+PLEASE USE THE DEFAULT BAUD-\/\+RATE FOR BLUETOOTH!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au16\+\_\+baud\+Rate} & variable that contains the BAUD RATE to be passed to the function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a4fcda22d69cf54ef48249685e9fef27f}\label{_h_a_l___b_l_u_e_t_o_o_t_h__program_8c_a4fcda22d69cf54ef48249685e9fef27f}} 
+\index{HAL\_BLUETOOTH\_program.c@{HAL\_BLUETOOTH\_program.c}!HAL\_recvBluetooth@{HAL\_recvBluetooth}}
+\index{HAL\_recvBluetooth@{HAL\_recvBluetooth}!HAL\_BLUETOOTH\_program.c@{HAL\_BLUETOOTH\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_recvBluetooth()}{HAL\_recvBluetooth()}}
+{\footnotesize\ttfamily void HAL\+\_\+recv\+Bluetooth (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Holder }\end{DoxyParamCaption})}
+
+
+
+Receive data from an already established BLUETOOTH connection with a given device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+data\+Holder} & pointer to the variable that contains the data received from the BLUETOOTH Transmission. \\
+\hline
+\end{DoxyParams}

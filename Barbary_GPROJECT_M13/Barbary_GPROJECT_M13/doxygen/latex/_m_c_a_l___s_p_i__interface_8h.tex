@@ -1,0 +1,139 @@
+\hypertarget{_m_c_a_l___s_p_i__interface_8h}{}\doxysection{MCAL/\+SPI/\+MCAL\+\_\+\+SPI\+\_\+interface.h File Reference}
+\label{_m_c_a_l___s_p_i__interface_8h}\index{MCAL/SPI/MCAL\_SPI\_interface.h@{MCAL/SPI/MCAL\_SPI\_interface.h}}
+
+
+Interfacing file that contains all the needed interfacing macros as well as function prototypes.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a69cc06e29fa6a0ac599baea83b2376b7}\label{_m_c_a_l___s_p_i__interface_8h_a69cc06e29fa6a0ac599baea83b2376b7}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+MASTER}~(1)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a95d97d4a7116e764270ec5885a600429}\label{_m_c_a_l___s_p_i__interface_8h_a95d97d4a7116e764270ec5885a600429}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+SLAVE}~(0)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a3f663dab0adf0b070635fdff9a2d3c9c}\label{_m_c_a_l___s_p_i__interface_8h_a3f663dab0adf0b070635fdff9a2d3c9c}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+MSB}~(0)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_ab59432a28bea3462b814f7bf2c34ac63}\label{_m_c_a_l___s_p_i__interface_8h_ab59432a28bea3462b814f7bf2c34ac63}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+LSB}~(1)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a245e984fe8b1e271caeed092ef499ae8}\label{_m_c_a_l___s_p_i__interface_8h_a245e984fe8b1e271caeed092ef499ae8}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+SAMPLE\+\_\+\+R\+\_\+\+SETUP\+\_\+F}~(0)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a01b84965eaacc5313c8e1ad7f0f906cf}\label{_m_c_a_l___s_p_i__interface_8h_a01b84965eaacc5313c8e1ad7f0f906cf}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+SETUP\+\_\+\+R\+\_\+\+SAMPLE\+\_\+F}~(1)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a41a16a9a00211ffb39c85347db2d0b3b}\label{_m_c_a_l___s_p_i__interface_8h_a41a16a9a00211ffb39c85347db2d0b3b}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+SAMPLE\+\_\+\+F\+\_\+\+SETUP\+\_\+R}~(2)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a72be8e6c71de84665047e77540dd78f5}\label{_m_c_a_l___s_p_i__interface_8h_a72be8e6c71de84665047e77540dd78f5}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+SETUP\+\_\+\+F\+\_\+\+SAMPLE\+\_\+R}~(3)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a578e998f69aa33b022bc9f8140609f89}\label{_m_c_a_l___s_p_i__interface_8h_a578e998f69aa33b022bc9f8140609f89}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+2}~(0)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a6a762a6365fe181762a28ac9d3638cd2}\label{_m_c_a_l___s_p_i__interface_8h_a6a762a6365fe181762a28ac9d3638cd2}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+4}~(1)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a623ee11728957a58c1f927576f4645f3}\label{_m_c_a_l___s_p_i__interface_8h_a623ee11728957a58c1f927576f4645f3}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+8}~(2)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a063d27921e50c9857170cba4792d9e44}\label{_m_c_a_l___s_p_i__interface_8h_a063d27921e50c9857170cba4792d9e44}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+16}~(3)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a5e1b4d196a688ebeab6628e2ac0b9d96}\label{_m_c_a_l___s_p_i__interface_8h_a5e1b4d196a688ebeab6628e2ac0b9d96}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+32}~(4)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a87d952b1f6134c1399b945ba7d23cffa}\label{_m_c_a_l___s_p_i__interface_8h_a87d952b1f6134c1399b945ba7d23cffa}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+64}~(5)
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a47ff39b2645fd2eb53d1d4796fa31e13}\label{_m_c_a_l___s_p_i__interface_8h_a47ff39b2645fd2eb53d1d4796fa31e13}} 
+\#define {\bfseries MCAL\+\_\+\+SPI\+\_\+\+CLK\+\_\+\+BY\+\_\+128}~(7)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__interface_8h_a9ced5257d3947990876ad1e248bfa551}{MCAL\+\_\+\+SPI\+\_\+init}} (u8\+\_\+t au8\+\_\+spi\+Mode, u8\+\_\+t au8\+\_\+data\+Out\+Mode, u8\+\_\+t au8\+\_\+clock\+Mode, u8\+\_\+t au8\+\_\+spi\+Speed)
+\begin{DoxyCompactList}\small\item\em Initializer function for an SPI connection. (!\+USE THE MACROS!) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__interface_8h_a44a82e88824c0cc98a640c72fac1a08c}{MCAL\+\_\+\+SPI\+\_\+master\+Send\+Recv\+Byte}} (u8\+\_\+t au8\+\_\+sent\+Data, u8\+\_\+t $\ast$pu8\+\_\+recv\+Data)
+\begin{DoxyCompactList}\small\item\em Sending or Receiving one byte as a MASTER. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__interface_8h_a6c605ee2c122abd7008f1321d0e67c01}{MCAL\+\_\+\+SPI\+\_\+slave\+Send\+Recv\+Byte}} (u8\+\_\+t au8\+\_\+sent\+Data, u8\+\_\+t $\ast$pu8\+\_\+recv\+Data)
+\begin{DoxyCompactList}\small\item\em Sending or Receiving one byte as a SLAVE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfacing file that contains all the needed interfacing macros as well as function prototypes. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2021 8\+:15\+:25 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a9ced5257d3947990876ad1e248bfa551}\label{_m_c_a_l___s_p_i__interface_8h_a9ced5257d3947990876ad1e248bfa551}} 
+\index{MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}!MCAL\_SPI\_init@{MCAL\_SPI\_init}}
+\index{MCAL\_SPI\_init@{MCAL\_SPI\_init}!MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_init()}{MCAL\_SPI\_init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+init (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+spi\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+data\+Out\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+clock\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+spi\+Speed }\end{DoxyParamCaption})}
+
+
+
+Initializer function for an SPI connection. (!\+USE THE MACROS!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+spi\+Mode} & MASTER or Slave mode variable. \\
+\hline
+{\em au8\+\_\+data\+Out\+Mode} & MSB or LSB DATA OUT MODES. \\
+\hline
+{\em au8\+\_\+clock\+Mode} & CLOCK MODES (LEADING AND TRAILING EDGES respectively defined in MACROS). \\
+\hline
+{\em au8\+\_\+spi\+Speed} & connection speed variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a44a82e88824c0cc98a640c72fac1a08c}\label{_m_c_a_l___s_p_i__interface_8h_a44a82e88824c0cc98a640c72fac1a08c}} 
+\index{MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}!MCAL\_SPI\_masterSendRecvByte@{MCAL\_SPI\_masterSendRecvByte}}
+\index{MCAL\_SPI\_masterSendRecvByte@{MCAL\_SPI\_masterSendRecvByte}!MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_masterSendRecvByte()}{MCAL\_SPI\_masterSendRecvByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+master\+Send\+Recv\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+sent\+Data,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+recv\+Data }\end{DoxyParamCaption})}
+
+
+
+Sending or Receiving one byte as a MASTER. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+sent\+Data} & data to be sent. \\
+\hline
+{\em pu8\+\_\+recv\+Data} & data to be received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__interface_8h_a6c605ee2c122abd7008f1321d0e67c01}\label{_m_c_a_l___s_p_i__interface_8h_a6c605ee2c122abd7008f1321d0e67c01}} 
+\index{MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}!MCAL\_SPI\_slaveSendRecvByte@{MCAL\_SPI\_slaveSendRecvByte}}
+\index{MCAL\_SPI\_slaveSendRecvByte@{MCAL\_SPI\_slaveSendRecvByte}!MCAL\_SPI\_interface.h@{MCAL\_SPI\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_slaveSendRecvByte()}{MCAL\_SPI\_slaveSendRecvByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+slave\+Send\+Recv\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+sent\+Data,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+recv\+Data }\end{DoxyParamCaption})}
+
+
+
+Sending or Receiving one byte as a SLAVE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+sent\+Data} & data to be sent. \\
+\hline
+{\em pu8\+\_\+recv\+Data} & data to be received. \\
+\hline
+\end{DoxyParams}

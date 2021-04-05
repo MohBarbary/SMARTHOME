@@ -1,0 +1,179 @@
+\hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c}{}\doxysection{APP/\+APP\+\_\+\+SMARTHOME\+\_\+program.c File Reference}
+\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c}\index{APP/APP\_SMARTHOME\_program.c@{APP/APP\_SMARTHOME\_program.c}}
+
+
+Program file that contains the implementation of the function prototypes defined in the header files for the SMARTHOME DRIVER.  
+
+
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+UART\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+SPI\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HAL\+\_\+\+BLUETOOTH\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}APP\+\_\+\+SMARTHOME\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+CPU}~16000000\+UL
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_aa57efc749d9d5ee014d51fd004d352bb}{APP\+\_\+authority}} (u8\+\_\+t au8\+\_\+select\+Authority)
+\begin{DoxyCompactList}\small\item\em Used to assign the authority of the calling MCU unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a72f08d66d0b37cf7c4d539fbc2e2ce10}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a72f08d66d0b37cf7c4d539fbc2e2ce10}} 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a72f08d66d0b37cf7c4d539fbc2e2ce10}{APP\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the application (MASTER/\+SLAVE have different initializations). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a68b10a0700984ca641c79b6232edcd9f}{APP\+\_\+recv\+CMD}} (u8\+\_\+t $\ast$pu8\+\_\+data\+Holder)
+\begin{DoxyCompactList}\small\item\em Receives a command via BLUETOOTH/\+SPI DEPENDING ON THE AUTHORITY. (MASTER/\+SLAVE COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}{APP\+\_\+send\+CMD}} (u8\+\_\+t au8\+\_\+data\+Sent, u8\+\_\+t $\ast$pu8\+\_\+data\+Recv)
+\begin{DoxyCompactList}\small\item\em Sends a command via SPI (MASTER ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a187077cd7367fd04157d5a0f02432dc6}{APP\+\_\+use\+Write\+LCD}} (u8\+\_\+t $\ast$pu8\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Used to write strings on the LCD. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a35c08bef02391b5d33f735c17cbcb0a0}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a35c08bef02391b5d33f735c17cbcb0a0}} 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a35c08bef02391b5d33f735c17cbcb0a0}{APP\+\_\+use\+Clear\+LCD}} ()
+\begin{DoxyCompactList}\small\item\em Used to clear the LCD. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1e4509f95d51066e49fd9143132e5d22}{APP\+\_\+use\+Cursor\+LCD}} (u8\+\_\+t au8\+\_\+row, u8\+\_\+t au8\+\_\+col)
+\begin{DoxyCompactList}\small\item\em Used to put the cursor of the LCD at a specific location. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1483ed576e1ed4339e5e0a6e3e1b1c91}{APP\+\_\+power\+Leds}} (u8\+\_\+t au8\+\_\+led\+Name)
+\begin{DoxyCompactList}\small\item\em Used to power LED given MACRO NAMES or NUMBERS. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_ad7ef592f178e9da10ad42f97485dc2f0}{APP\+\_\+power\+Garage\+Door}} (u8\+\_\+t au8\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Used to power the garage MOTOR. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a4b4b40a1f443f4329f46ce2ee61c3677}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a4b4b40a1f443f4329f46ce2ee61c3677}} 
+u8\+\_\+t {\bfseries gu8\+\_\+\+Authority} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file that contains the implementation of the function prototypes defined in the header files for the SMARTHOME DRIVER. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+03-\/04-\/2021 3\+:22\+:13 AM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_aa57efc749d9d5ee014d51fd004d352bb}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_aa57efc749d9d5ee014d51fd004d352bb}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_authority@{APP\_authority}}
+\index{APP\_authority@{APP\_authority}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_authority()}{APP\_authority()}}
+{\footnotesize\ttfamily void APP\+\_\+authority (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+select\+Authority }\end{DoxyParamCaption})}
+
+
+
+Used to assign the authority of the calling MCU unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+\+Authority} & the variable containing the Authority of the MCU (!\+USE THE MACROS!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_ad7ef592f178e9da10ad42f97485dc2f0}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_ad7ef592f178e9da10ad42f97485dc2f0}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_powerGarageDoor@{APP\_powerGarageDoor}}
+\index{APP\_powerGarageDoor@{APP\_powerGarageDoor}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_powerGarageDoor()}{APP\_powerGarageDoor()}}
+{\footnotesize\ttfamily void APP\+\_\+power\+Garage\+Door (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Used to power the garage MOTOR. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+state} & The variable that stores the values to toggle the MOTOR. (!\+USE THE MACROS!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1483ed576e1ed4339e5e0a6e3e1b1c91}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1483ed576e1ed4339e5e0a6e3e1b1c91}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_powerLeds@{APP\_powerLeds}}
+\index{APP\_powerLeds@{APP\_powerLeds}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_powerLeds()}{APP\_powerLeds()}}
+{\footnotesize\ttfamily void APP\+\_\+power\+Leds (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+led\+Name }\end{DoxyParamCaption})}
+
+
+
+Used to power LED given MACRO NAMES or NUMBERS. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+led\+Name} & The variable that stores the values of the LEDS to be powered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a68b10a0700984ca641c79b6232edcd9f}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a68b10a0700984ca641c79b6232edcd9f}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_recvCMD@{APP\_recvCMD}}
+\index{APP\_recvCMD@{APP\_recvCMD}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_recvCMD()}{APP\_recvCMD()}}
+{\footnotesize\ttfamily void APP\+\_\+recv\+CMD (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Holder }\end{DoxyParamCaption})}
+
+
+
+Receives a command via BLUETOOTH/\+SPI DEPENDING ON THE AUTHORITY. (MASTER/\+SLAVE COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+data\+Holder} & A pointer to the variable that will hold the data received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_sendCMD@{APP\_sendCMD}}
+\index{APP\_sendCMD@{APP\_sendCMD}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_sendCMD()}{APP\_sendCMD()}}
+{\footnotesize\ttfamily void APP\+\_\+send\+CMD (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+data\+Sent,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Recv }\end{DoxyParamCaption})}
+
+
+
+Sends a command via SPI (MASTER ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+data\+Sent} & A variable containing the data to be sent. \\
+\hline
+{\em pu8\+\_\+data\+Recv} & A pointer to a variable for the data to be received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1e4509f95d51066e49fd9143132e5d22}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a1e4509f95d51066e49fd9143132e5d22}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_useCursorLCD@{APP\_useCursorLCD}}
+\index{APP\_useCursorLCD@{APP\_useCursorLCD}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_useCursorLCD()}{APP\_useCursorLCD()}}
+{\footnotesize\ttfamily void APP\+\_\+use\+Cursor\+LCD (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+row,  }\item[{u8\+\_\+t}]{au8\+\_\+col }\end{DoxyParamCaption})}
+
+
+
+Used to put the cursor of the LCD at a specific location. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+row} & The variable containing the ROW where we want our cursor to be. \\
+\hline
+{\em au8\+\_\+col} & The variable containing the COLUMN where we want our cursor to be. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a187077cd7367fd04157d5a0f02432dc6}\label{_a_p_p___s_m_a_r_t_h_o_m_e__program_8c_a187077cd7367fd04157d5a0f02432dc6}} 
+\index{APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}!APP\_useWriteLCD@{APP\_useWriteLCD}}
+\index{APP\_useWriteLCD@{APP\_useWriteLCD}!APP\_SMARTHOME\_program.c@{APP\_SMARTHOME\_program.c}}
+\doxysubsubsection{\texorpdfstring{APP\_useWriteLCD()}{APP\_useWriteLCD()}}
+{\footnotesize\ttfamily void APP\+\_\+use\+Write\+LCD (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+Used to write strings on the LCD. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+string} & A pointer to a variable that contains the string to be shown on the LCD. \\
+\hline
+\end{DoxyParams}

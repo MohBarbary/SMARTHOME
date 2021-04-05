@@ -1,0 +1,105 @@
+\hypertarget{_m_c_a_l___s_p_i__program_8c}{}\doxysection{MCAL/\+SPI/\+MCAL\+\_\+\+SPI\+\_\+program.c File Reference}
+\label{_m_c_a_l___s_p_i__program_8c}\index{MCAL/SPI/MCAL\_SPI\_program.c@{MCAL/SPI/MCAL\_SPI\_program.c}}
+
+
+Program file that contains the implementation of the function prototypes defined in the header files for the SPI DRIVER.  
+
+
+{\ttfamily \#include \char`\"{}../\+LSTD/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+LSTD/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+SPI\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+SPI\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_m_c_a_l___s_p_i__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+CPU}~16000000\+UL
+\item 
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__program_8c_a8032a941e3dca02cdfade5cc3cfe1dc6}\label{_m_c_a_l___s_p_i__program_8c_a8032a941e3dca02cdfade5cc3cfe1dc6}} 
+\#define {\bfseries TIMEOUT\+\_\+\+DELAY}~(100)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__program_8c_a9ced5257d3947990876ad1e248bfa551}{MCAL\+\_\+\+SPI\+\_\+init}} (u8\+\_\+t au8\+\_\+spi\+Mode, u8\+\_\+t au8\+\_\+data\+Out\+Mode, u8\+\_\+t au8\+\_\+clock\+Mode, u8\+\_\+t au8\+\_\+spi\+Speed)
+\begin{DoxyCompactList}\small\item\em Initializer function for an SPI connection. (!\+USE THE MACROS!) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__program_8c_a44a82e88824c0cc98a640c72fac1a08c}{MCAL\+\_\+\+SPI\+\_\+master\+Send\+Recv\+Byte}} (u8\+\_\+t au8\+\_\+sent\+Data, u8\+\_\+t $\ast$pu8\+\_\+recv\+Data)
+\begin{DoxyCompactList}\small\item\em Sending or Receiving one byte as a MASTER. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___s_p_i__program_8c_a6c605ee2c122abd7008f1321d0e67c01}{MCAL\+\_\+\+SPI\+\_\+slave\+Send\+Recv\+Byte}} (u8\+\_\+t au8\+\_\+sent\+Data, u8\+\_\+t $\ast$pu8\+\_\+recv\+Data)
+\begin{DoxyCompactList}\small\item\em Sending or Receiving one byte as a SLAVE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file that contains the implementation of the function prototypes defined in the header files for the SPI DRIVER. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2021
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__program_8c_a9ced5257d3947990876ad1e248bfa551}\label{_m_c_a_l___s_p_i__program_8c_a9ced5257d3947990876ad1e248bfa551}} 
+\index{MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}!MCAL\_SPI\_init@{MCAL\_SPI\_init}}
+\index{MCAL\_SPI\_init@{MCAL\_SPI\_init}!MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_init()}{MCAL\_SPI\_init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+init (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+spi\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+data\+Out\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+clock\+Mode,  }\item[{u8\+\_\+t}]{au8\+\_\+spi\+Speed }\end{DoxyParamCaption})}
+
+
+
+Initializer function for an SPI connection. (!\+USE THE MACROS!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+spi\+Mode} & MASTER or Slave mode variable. \\
+\hline
+{\em au8\+\_\+data\+Out\+Mode} & MSB or LSB DATA OUT MODES. \\
+\hline
+{\em au8\+\_\+clock\+Mode} & CLOCK MODES (LEADING AND TRAILING EDGES respectively defined in MACROS). \\
+\hline
+{\em au8\+\_\+spi\+Speed} & connection speed variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__program_8c_a44a82e88824c0cc98a640c72fac1a08c}\label{_m_c_a_l___s_p_i__program_8c_a44a82e88824c0cc98a640c72fac1a08c}} 
+\index{MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}!MCAL\_SPI\_masterSendRecvByte@{MCAL\_SPI\_masterSendRecvByte}}
+\index{MCAL\_SPI\_masterSendRecvByte@{MCAL\_SPI\_masterSendRecvByte}!MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_masterSendRecvByte()}{MCAL\_SPI\_masterSendRecvByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+master\+Send\+Recv\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+sent\+Data,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+recv\+Data }\end{DoxyParamCaption})}
+
+
+
+Sending or Receiving one byte as a MASTER. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+sent\+Data} & data to be sent. \\
+\hline
+{\em pu8\+\_\+recv\+Data} & data to be received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___s_p_i__program_8c_a6c605ee2c122abd7008f1321d0e67c01}\label{_m_c_a_l___s_p_i__program_8c_a6c605ee2c122abd7008f1321d0e67c01}} 
+\index{MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}!MCAL\_SPI\_slaveSendRecvByte@{MCAL\_SPI\_slaveSendRecvByte}}
+\index{MCAL\_SPI\_slaveSendRecvByte@{MCAL\_SPI\_slaveSendRecvByte}!MCAL\_SPI\_program.c@{MCAL\_SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_slaveSendRecvByte()}{MCAL\_SPI\_slaveSendRecvByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+slave\+Send\+Recv\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+sent\+Data,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+recv\+Data }\end{DoxyParamCaption})}
+
+
+
+Sending or Receiving one byte as a SLAVE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+sent\+Data} & data to be sent. \\
+\hline
+{\em pu8\+\_\+recv\+Data} & data to be received. \\
+\hline
+\end{DoxyParams}

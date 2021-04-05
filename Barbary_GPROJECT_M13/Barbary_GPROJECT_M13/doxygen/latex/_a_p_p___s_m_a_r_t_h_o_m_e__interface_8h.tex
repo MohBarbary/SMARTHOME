@@ -1,0 +1,237 @@
+\hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h}{}\doxysection{APP/\+APP\+\_\+\+SMARTHOME\+\_\+interface.h File Reference}
+\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h}\index{APP/APP\_SMARTHOME\_interface.h@{APP/APP\_SMARTHOME\_interface.h}}
+
+
+Interfacing file that contains the MACROS and Function prototypes used to make the SMARTHOME DRIVER.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9528a387f5366160379c221ccbf1d612}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9528a387f5366160379c221ccbf1d612}} 
+\#define {\bfseries MASTER\+\_\+\+MCU}~(0)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_abf181b28a770c0535c861b376bf37b1f}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_abf181b28a770c0535c861b376bf37b1f}} 
+\#define {\bfseries SLAVE\+\_\+\+MCU}~(1)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a96c7f3719417531114ac370d42734c1c}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a96c7f3719417531114ac370d42734c1c}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+ROW00}~(0x80)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a31933ceb1d1eefd275edd7ee172322cc}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a31933ceb1d1eefd275edd7ee172322cc}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+ROW01}~(0x\+C0)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9a7080e2b831959fc6eda805147dbcd5}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9a7080e2b831959fc6eda805147dbcd5}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL00}~(0)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a7f41cf96562c29f1b708c870d2cc389d}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a7f41cf96562c29f1b708c870d2cc389d}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL01}~(1)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a6cf94dcafdcc1f655042a9295bdba613}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a6cf94dcafdcc1f655042a9295bdba613}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL02}~(2)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a65ba7d187d3c254ad5163c17f16853d4}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a65ba7d187d3c254ad5163c17f16853d4}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL03}~(3)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a64ef60ff292d86308570baf2437cebc9}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a64ef60ff292d86308570baf2437cebc9}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL04}~(4)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_aa07422c46b1bd7a269fa094ad5e7dc69}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_aa07422c46b1bd7a269fa094ad5e7dc69}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL05}~(5)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_aab4ab884358c0240221fab42bf390edb}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_aab4ab884358c0240221fab42bf390edb}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL06}~(6)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ac3bdeea4efc9f2c90b4a404bdbe4726c}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ac3bdeea4efc9f2c90b4a404bdbe4726c}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL07}~(7)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ae85f8509469e002e45f4f0067d1c8523}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ae85f8509469e002e45f4f0067d1c8523}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL08}~(8)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a313ac96406f1f85c71d41ac8e08e1789}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a313ac96406f1f85c71d41ac8e08e1789}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL09}~(9)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ab33b50f33ad4444da4c5d90ee79ca4c8}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ab33b50f33ad4444da4c5d90ee79ca4c8}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL10}~(10)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a17b112cbf46ca2610553d46a3f435f4c}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a17b112cbf46ca2610553d46a3f435f4c}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL11}~(11)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a0ade4e5faa67a66ebdfbbb0bd8ef853f}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a0ade4e5faa67a66ebdfbbb0bd8ef853f}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL12}~(12)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a3a38c7727e333943a3ed2ba01bc842cd}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a3a38c7727e333943a3ed2ba01bc842cd}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL13}~(13)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_acf297d7c4ccdbb5243f7175cfb665457}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_acf297d7c4ccdbb5243f7175cfb665457}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL14}~(14)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9ee89dfa6d08310da84a5f6da503edae}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9ee89dfa6d08310da84a5f6da503edae}} 
+\#define {\bfseries APP\+\_\+\+LCD\+\_\+\+COL15}~(15)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a03290a0a213f280092840d6d03614b46}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a03290a0a213f280092840d6d03614b46}} 
+\#define {\bfseries APP\+\_\+\+LED\+\_\+\+KITCHEN}~(1)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ab3912be21df55fba1b7b0965da2af30c}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ab3912be21df55fba1b7b0965da2af30c}} 
+\#define {\bfseries APP\+\_\+\+LED\+\_\+\+GARAGE}~(3)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a0aeece011d3c8f906c7425ef6d6ee263}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a0aeece011d3c8f906c7425ef6d6ee263}} 
+\#define {\bfseries APP\+\_\+\+LED\+\_\+\+NULL}~(0)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9afaa7d462e8c67f33bda159608e4a2c}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9afaa7d462e8c67f33bda159608e4a2c}} 
+\#define {\bfseries APP\+\_\+\+GARAGE\+\_\+\+DOOR\+\_\+\+OFF}~(0)
+\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9bc89c70bfe81fac01036e115ba694dd}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9bc89c70bfe81fac01036e115ba694dd}} 
+\#define {\bfseries APP\+\_\+\+GARAGE\+\_\+\+DOOR\+\_\+\+ON}~(1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a2b6d33c38c47dc49c7e4a327f85f478a}{APP\+\_\+authority}} (u8\+\_\+t au8\+\_\+\+Authority)
+\begin{DoxyCompactList}\small\item\em Used to assign the authority of the calling MCU unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a72f08d66d0b37cf7c4d539fbc2e2ce10}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a72f08d66d0b37cf7c4d539fbc2e2ce10}} 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a72f08d66d0b37cf7c4d539fbc2e2ce10}{APP\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the application (MASTER/\+SLAVE have different initializations). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a68b10a0700984ca641c79b6232edcd9f}{APP\+\_\+recv\+CMD}} (u8\+\_\+t $\ast$pu8\+\_\+data\+Holder)
+\begin{DoxyCompactList}\small\item\em Receives a command via BLUETOOTH/\+SPI DEPENDING ON THE AUTHORITY. (MASTER/\+SLAVE COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}{APP\+\_\+send\+CMD}} (u8\+\_\+t au8\+\_\+data\+Sent, u8\+\_\+t $\ast$pu8\+\_\+data\+Recv)
+\begin{DoxyCompactList}\small\item\em Sends a command via SPI (MASTER ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a187077cd7367fd04157d5a0f02432dc6}{APP\+\_\+use\+Write\+LCD}} (u8\+\_\+t $\ast$pu8\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Used to write strings on the LCD. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a35c08bef02391b5d33f735c17cbcb0a0}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a35c08bef02391b5d33f735c17cbcb0a0}} 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a35c08bef02391b5d33f735c17cbcb0a0}{APP\+\_\+use\+Clear\+LCD}} ()
+\begin{DoxyCompactList}\small\item\em Used to clear the LCD. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1e4509f95d51066e49fd9143132e5d22}{APP\+\_\+use\+Cursor\+LCD}} (u8\+\_\+t au8\+\_\+row, u8\+\_\+t au8\+\_\+col)
+\begin{DoxyCompactList}\small\item\em Used to put the cursor of the LCD at a specific location. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1483ed576e1ed4339e5e0a6e3e1b1c91}{APP\+\_\+power\+Leds}} (u8\+\_\+t au8\+\_\+led\+Name)
+\begin{DoxyCompactList}\small\item\em Used to power LED given MACRO NAMES or NUMBERS. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ad7ef592f178e9da10ad42f97485dc2f0}{APP\+\_\+power\+Garage\+Door}} (u8\+\_\+t au8\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Used to power the garage MOTOR. (SLAVE ONLY COMMAND) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfacing file that contains the MACROS and Function prototypes used to make the SMARTHOME DRIVER. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+03-\/04-\/2021 3\+:21\+:54 AM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a2b6d33c38c47dc49c7e4a327f85f478a}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a2b6d33c38c47dc49c7e4a327f85f478a}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_authority@{APP\_authority}}
+\index{APP\_authority@{APP\_authority}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_authority()}{APP\_authority()}}
+{\footnotesize\ttfamily void APP\+\_\+authority (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+select\+Authority }\end{DoxyParamCaption})}
+
+
+
+Used to assign the authority of the calling MCU unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+\+Authority} & the variable containing the Authority of the MCU (!\+USE THE MACROS!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ad7ef592f178e9da10ad42f97485dc2f0}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_ad7ef592f178e9da10ad42f97485dc2f0}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_powerGarageDoor@{APP\_powerGarageDoor}}
+\index{APP\_powerGarageDoor@{APP\_powerGarageDoor}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_powerGarageDoor()}{APP\_powerGarageDoor()}}
+{\footnotesize\ttfamily void APP\+\_\+power\+Garage\+Door (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Used to power the garage MOTOR. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+state} & The variable that stores the values to toggle the MOTOR. (!\+USE THE MACROS!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1483ed576e1ed4339e5e0a6e3e1b1c91}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1483ed576e1ed4339e5e0a6e3e1b1c91}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_powerLeds@{APP\_powerLeds}}
+\index{APP\_powerLeds@{APP\_powerLeds}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_powerLeds()}{APP\_powerLeds()}}
+{\footnotesize\ttfamily void APP\+\_\+power\+Leds (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+led\+Name }\end{DoxyParamCaption})}
+
+
+
+Used to power LED given MACRO NAMES or NUMBERS. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+led\+Name} & The variable that stores the values of the LEDS to be powered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a68b10a0700984ca641c79b6232edcd9f}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a68b10a0700984ca641c79b6232edcd9f}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_recvCMD@{APP\_recvCMD}}
+\index{APP\_recvCMD@{APP\_recvCMD}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_recvCMD()}{APP\_recvCMD()}}
+{\footnotesize\ttfamily void APP\+\_\+recv\+CMD (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Holder }\end{DoxyParamCaption})}
+
+
+
+Receives a command via BLUETOOTH/\+SPI DEPENDING ON THE AUTHORITY. (MASTER/\+SLAVE COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+data\+Holder} & A pointer to the variable that will hold the data received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a9dcc38ce2dc4c2683b0cbbb2a7e8a0b9}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_sendCMD@{APP\_sendCMD}}
+\index{APP\_sendCMD@{APP\_sendCMD}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_sendCMD()}{APP\_sendCMD()}}
+{\footnotesize\ttfamily void APP\+\_\+send\+CMD (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+data\+Sent,  }\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Recv }\end{DoxyParamCaption})}
+
+
+
+Sends a command via SPI (MASTER ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+data\+Sent} & A variable containing the data to be sent. \\
+\hline
+{\em pu8\+\_\+data\+Recv} & A pointer to a variable for the data to be received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1e4509f95d51066e49fd9143132e5d22}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a1e4509f95d51066e49fd9143132e5d22}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_useCursorLCD@{APP\_useCursorLCD}}
+\index{APP\_useCursorLCD@{APP\_useCursorLCD}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_useCursorLCD()}{APP\_useCursorLCD()}}
+{\footnotesize\ttfamily void APP\+\_\+use\+Cursor\+LCD (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+row,  }\item[{u8\+\_\+t}]{au8\+\_\+col }\end{DoxyParamCaption})}
+
+
+
+Used to put the cursor of the LCD at a specific location. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+row} & The variable containing the ROW where we want our cursor to be. \\
+\hline
+{\em au8\+\_\+col} & The variable containing the COLUMN where we want our cursor to be. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a187077cd7367fd04157d5a0f02432dc6}\label{_a_p_p___s_m_a_r_t_h_o_m_e__interface_8h_a187077cd7367fd04157d5a0f02432dc6}} 
+\index{APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}!APP\_useWriteLCD@{APP\_useWriteLCD}}
+\index{APP\_useWriteLCD@{APP\_useWriteLCD}!APP\_SMARTHOME\_interface.h@{APP\_SMARTHOME\_interface.h}}
+\doxysubsubsection{\texorpdfstring{APP\_useWriteLCD()}{APP\_useWriteLCD()}}
+{\footnotesize\ttfamily void APP\+\_\+use\+Write\+LCD (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+Used to write strings on the LCD. (SLAVE ONLY COMMAND) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+string} & A pointer to a variable that contains the string to be shown on the LCD. \\
+\hline
+\end{DoxyParams}

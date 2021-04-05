@@ -1,0 +1,114 @@
+\hypertarget{_m_c_a_l___u_a_r_t__program_8c}{}\doxysection{MCAL/\+UART/\+MCAL\+\_\+\+UART\+\_\+program.c File Reference}
+\label{_m_c_a_l___u_a_r_t__program_8c}\index{MCAL/UART/MCAL\_UART\_program.c@{MCAL/UART/MCAL\_UART\_program.c}}
+
+
+Program file that contains the implementation for the function prototypes defined in the header files.  
+
+
+{\ttfamily \#include \char`\"{}../\+LSTD/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+LSTD/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+UART\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+UART\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_m_c_a_l___u_a_r_t__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+CPU}~16000000\+UL
+\item 
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_a8032a941e3dca02cdfade5cc3cfe1dc6}\label{_m_c_a_l___u_a_r_t__program_8c_a8032a941e3dca02cdfade5cc3cfe1dc6}} 
+\#define {\bfseries TIMEOUT\+\_\+\+DELAY}~(10)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_m_c_a_l___u_a_r_t__program_8c_a6ec46296f5159e2ea13fcb58befcc4a4}{MCAL\+\_\+\+UART\+\_\+init}} (u16\+\_\+t au16\+\_\+baud\+Rate)
+\begin{DoxyCompactList}\small\item\em Initialize a UART connection with a given BAUD RATE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___u_a_r_t__program_8c_a1f4c924417da0ff633023de3ac7c26a7}{MCAL\+\_\+\+UART\+\_\+send\+Byte}} (u8\+\_\+t au8\+\_\+data\+Byte)
+\begin{DoxyCompactList}\small\item\em Send one byte via an already established UART connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___u_a_r_t__program_8c_aceecb882340bba14ccaed6f5162b37d2}{MCAL\+\_\+\+UART\+\_\+send\+Stream}} (u8\+\_\+t $\ast$pu8\+\_\+data\+Stream, u8\+\_\+t au8\+\_\+data\+Size)
+\begin{DoxyCompactList}\small\item\em Send a stream of data via an already established UART connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_m_c_a_l___u_a_r_t__program_8c_af730fd83d21af44b28f400894b6e8b20}{MCAL\+\_\+\+UART\+\_\+recv\+Byte}} (u8\+\_\+t $\ast$pu8\+\_\+data\+Bye)
+\begin{DoxyCompactList}\small\item\em Receive one byte via an already established UART connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file that contains the implementation for the function prototypes defined in the header files. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2021 9\+:03\+:12 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_a6ec46296f5159e2ea13fcb58befcc4a4}\label{_m_c_a_l___u_a_r_t__program_8c_a6ec46296f5159e2ea13fcb58befcc4a4}} 
+\index{MCAL\_UART\_program.c@{MCAL\_UART\_program.c}!MCAL\_UART\_init@{MCAL\_UART\_init}}
+\index{MCAL\_UART\_init@{MCAL\_UART\_init}!MCAL\_UART\_program.c@{MCAL\_UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_init()}{MCAL\_UART\_init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+init (\begin{DoxyParamCaption}\item[{u16\+\_\+t}]{au16\+\_\+baud\+Rate }\end{DoxyParamCaption})}
+
+
+
+Initialize a UART connection with a given BAUD RATE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au16\+\_\+baud\+Rate} & the baud rate to be passed for the init function (!\+Please use the pre-\/defined MACROS!). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_af730fd83d21af44b28f400894b6e8b20}\label{_m_c_a_l___u_a_r_t__program_8c_af730fd83d21af44b28f400894b6e8b20}} 
+\index{MCAL\_UART\_program.c@{MCAL\_UART\_program.c}!MCAL\_UART\_recvByte@{MCAL\_UART\_recvByte}}
+\index{MCAL\_UART\_recvByte@{MCAL\_UART\_recvByte}!MCAL\_UART\_program.c@{MCAL\_UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_recvByte()}{MCAL\_UART\_recvByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+recv\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Bye }\end{DoxyParamCaption})}
+
+
+
+Receive one byte via an already established UART connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+data\+Bye} & a pointer to the data to be received. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_a1f4c924417da0ff633023de3ac7c26a7}\label{_m_c_a_l___u_a_r_t__program_8c_a1f4c924417da0ff633023de3ac7c26a7}} 
+\index{MCAL\_UART\_program.c@{MCAL\_UART\_program.c}!MCAL\_UART\_sendByte@{MCAL\_UART\_sendByte}}
+\index{MCAL\_UART\_sendByte@{MCAL\_UART\_sendByte}!MCAL\_UART\_program.c@{MCAL\_UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_sendByte()}{MCAL\_UART\_sendByte()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+send\+Byte (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+data\+Byte }\end{DoxyParamCaption})}
+
+
+
+Send one byte via an already established UART connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+data\+Byte} & the data to be sent. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_m_c_a_l___u_a_r_t__program_8c_aceecb882340bba14ccaed6f5162b37d2}\label{_m_c_a_l___u_a_r_t__program_8c_aceecb882340bba14ccaed6f5162b37d2}} 
+\index{MCAL\_UART\_program.c@{MCAL\_UART\_program.c}!MCAL\_UART\_sendStream@{MCAL\_UART\_sendStream}}
+\index{MCAL\_UART\_sendStream@{MCAL\_UART\_sendStream}!MCAL\_UART\_program.c@{MCAL\_UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_sendStream()}{MCAL\_UART\_sendStream()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+send\+Stream (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+data\+Stream,  }\item[{u8\+\_\+t}]{au8\+\_\+data\+Size }\end{DoxyParamCaption})}
+
+
+
+Send a stream of data via an already established UART connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+data\+Stream} & a pointer to the data to be sent. \\
+\hline
+{\em au8\+\_\+data\+Size} & the size of that data. \\
+\hline
+\end{DoxyParams}

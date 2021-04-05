@@ -1,0 +1,110 @@
+\hypertarget{_h_a_l___l_c_d__program_8c}{}\doxysection{HAL/\+LCD/\+HAL\+\_\+\+LCD\+\_\+program.c File Reference}
+\label{_h_a_l___l_c_d__program_8c}\index{HAL/LCD/HAL\_LCD\_program.c@{HAL/LCD/HAL\_LCD\_program.c}}
+
+
+\mbox{\hyperlink{_h_a_l___l_c_d__program_8c}{HAL\+\_\+\+LCD\+\_\+program.\+c}} is the file that contains the implementation for the function prototypes found in the \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h}{HAL\+\_\+\+LCD\+\_\+interface.\+h}} file.  
+
+
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HAL\+\_\+\+LCD\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HAL\+\_\+\+LCD\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_h_a_l___l_c_d__program_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+CPU}~16000000\+UL
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__program_8c_ad2640cdd90bf70b875ac512082059773}{HAL\+\_\+\+LCD\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+init is the LCD16x2 Initializing function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__program_8c_a9252027d006db95aa51d634f5afa746c}{HAL\+\_\+\+LCD\+\_\+display\+Character}} (u8\+\_\+t au8\+\_\+char\+Data)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+display\+Character is a function that displays the character passed as a parameter on the LCD16x2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__program_8c_ab2e6d67dc14d25903603e93bf8b2c1f4}{HAL\+\_\+\+LCD\+\_\+display\+String}} (u8\+\_\+t $\ast$pu8\+\_\+srt\+Data)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+display\+String is a function that displays a given string on the LCD16x2 screen (!\+Be careful of character overflows!) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__program_8c_a32b55f51265780302f1ca7d1fcca9a7a}{HAL\+\_\+\+LCD\+\_\+put\+At\+Loc}} (u8\+\_\+t au8\+\_\+row, u8\+\_\+t au8\+\_\+col)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+put\+At\+Loc is a function that moves the cursor of the LCD16x2 to the DDRAM address passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_ab9fd87ad26b88440457f849f702be0ea}\label{_h_a_l___l_c_d__program_8c_ab9fd87ad26b88440457f849f702be0ea}} 
+void \mbox{\hyperlink{_h_a_l___l_c_d__program_8c_ab9fd87ad26b88440457f849f702be0ea}{HAL\+\_\+\+LCD\+\_\+clear\+Display}} (void)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+clear\+Display is a function that clears the display of the LCD16x2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{_h_a_l___l_c_d__program_8c}{HAL\+\_\+\+LCD\+\_\+program.\+c}} is the file that contains the implementation for the function prototypes found in the \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h}{HAL\+\_\+\+LCD\+\_\+interface.\+h}} file. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2021 10\+:19\+:20 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_a9252027d006db95aa51d634f5afa746c}\label{_h_a_l___l_c_d__program_8c_a9252027d006db95aa51d634f5afa746c}} 
+\index{HAL\_LCD\_program.c@{HAL\_LCD\_program.c}!HAL\_LCD\_displayCharacter@{HAL\_LCD\_displayCharacter}}
+\index{HAL\_LCD\_displayCharacter@{HAL\_LCD\_displayCharacter}!HAL\_LCD\_program.c@{HAL\_LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_displayCharacter()}{HAL\_LCD\_displayCharacter()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+display\+Character (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+char\+Data }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+display\+Character is a function that displays the character passed as a parameter on the LCD16x2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+char\+Data} & is the data that will be passed to the LCD16x2. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_ab2e6d67dc14d25903603e93bf8b2c1f4}\label{_h_a_l___l_c_d__program_8c_ab2e6d67dc14d25903603e93bf8b2c1f4}} 
+\index{HAL\_LCD\_program.c@{HAL\_LCD\_program.c}!HAL\_LCD\_displayString@{HAL\_LCD\_displayString}}
+\index{HAL\_LCD\_displayString@{HAL\_LCD\_displayString}!HAL\_LCD\_program.c@{HAL\_LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_displayString()}{HAL\_LCD\_displayString()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+display\+String (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+srt\+Data }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+display\+String is a function that displays a given string on the LCD16x2 screen (!\+Be careful of character overflows!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+srt\+Data} & is a pointer to the 8 bits of dat that will be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_ad2640cdd90bf70b875ac512082059773}\label{_h_a_l___l_c_d__program_8c_ad2640cdd90bf70b875ac512082059773}} 
+\index{HAL\_LCD\_program.c@{HAL\_LCD\_program.c}!HAL\_LCD\_init@{HAL\_LCD\_init}}
+\index{HAL\_LCD\_init@{HAL\_LCD\_init}!HAL\_LCD\_program.c@{HAL\_LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_init()}{HAL\_LCD\_init()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+init is the LCD16x2 Initializing function. 
+
+SUPER IMPORTANT!//\mbox{\Hypertarget{_h_a_l___l_c_d__program_8c_a32b55f51265780302f1ca7d1fcca9a7a}\label{_h_a_l___l_c_d__program_8c_a32b55f51265780302f1ca7d1fcca9a7a}} 
+\index{HAL\_LCD\_program.c@{HAL\_LCD\_program.c}!HAL\_LCD\_putAtLoc@{HAL\_LCD\_putAtLoc}}
+\index{HAL\_LCD\_putAtLoc@{HAL\_LCD\_putAtLoc}!HAL\_LCD\_program.c@{HAL\_LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_putAtLoc()}{HAL\_LCD\_putAtLoc()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+put\+At\+Loc (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+row,  }\item[{u8\+\_\+t}]{au8\+\_\+col }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+put\+At\+Loc is a function that moves the cursor of the LCD16x2 to the DDRAM address passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+row} & is the variable containing the row where we want to move (!\+DO NOT FORGET TO USE THE MACROS!) \\
+\hline
+{\em au8\+\_\+col} & is the variable containing the column where we want to move (!\+DO NOT FORGET TO USE THE MACROS!) \\
+\hline
+\end{DoxyParams}

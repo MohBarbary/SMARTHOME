@@ -1,0 +1,155 @@
+\hypertarget{_h_a_l___l_c_d__interface_8h}{}\doxysection{HAL/\+LCD/\+HAL\+\_\+\+LCD\+\_\+interface.h File Reference}
+\label{_h_a_l___l_c_d__interface_8h}\index{HAL/LCD/HAL\_LCD\_interface.h@{HAL/LCD/HAL\_LCD\_interface.h}}
+
+
+This is the h file that is used for our macros, function prototypes and declaration used in our LCD16x2 Driver. !\+PLEASE DON\textquotesingle{}T FORGET TO USE DELAYS!  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ad046b5535855992757e6d159a526bce6}\label{_h_a_l___l_c_d__interface_8h_ad046b5535855992757e6d159a526bce6}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+ROW00}~(0x80)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a12c5f7ac534fce7ed71d66836ed4179b}\label{_h_a_l___l_c_d__interface_8h_a12c5f7ac534fce7ed71d66836ed4179b}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+ROW01}~(0x\+C0)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a62ac4533bef03854e3caa8523e80659a}\label{_h_a_l___l_c_d__interface_8h_a62ac4533bef03854e3caa8523e80659a}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL00}~(0)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a79c2569f864eed4c5806e49f3e360258}\label{_h_a_l___l_c_d__interface_8h_a79c2569f864eed4c5806e49f3e360258}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL01}~(1)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a7b4b64e68a6c893d3c0dacb34571f642}\label{_h_a_l___l_c_d__interface_8h_a7b4b64e68a6c893d3c0dacb34571f642}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL02}~(2)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ad646880e36f7ee0c1a357b377bb539e6}\label{_h_a_l___l_c_d__interface_8h_ad646880e36f7ee0c1a357b377bb539e6}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL03}~(3)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a5b84f4ea87857a17e74e7c2e0dba7fc6}\label{_h_a_l___l_c_d__interface_8h_a5b84f4ea87857a17e74e7c2e0dba7fc6}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL04}~(4)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a4c7efaeee26bd28c19ea8570db4e751e}\label{_h_a_l___l_c_d__interface_8h_a4c7efaeee26bd28c19ea8570db4e751e}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL05}~(5)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ad2777c8e5d970c8c22400ccac098f5f2}\label{_h_a_l___l_c_d__interface_8h_ad2777c8e5d970c8c22400ccac098f5f2}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL06}~(6)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a8d8465668878391b7f0cedd5f597842b}\label{_h_a_l___l_c_d__interface_8h_a8d8465668878391b7f0cedd5f597842b}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL07}~(7)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a333b07ade2874e7931b52f657585c1b5}\label{_h_a_l___l_c_d__interface_8h_a333b07ade2874e7931b52f657585c1b5}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL08}~(8)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_afd1d09a67ad629fdceaf1e87f054277b}\label{_h_a_l___l_c_d__interface_8h_afd1d09a67ad629fdceaf1e87f054277b}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL09}~(9)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a5ec17b8ffdbbd1523a8bff0e0c15ef2b}\label{_h_a_l___l_c_d__interface_8h_a5ec17b8ffdbbd1523a8bff0e0c15ef2b}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL10}~(10)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a131364dbb56928ccf8578006ab8f85bd}\label{_h_a_l___l_c_d__interface_8h_a131364dbb56928ccf8578006ab8f85bd}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL11}~(11)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_aea5f0f0946f0d2d8d48830e4e4f4ff7e}\label{_h_a_l___l_c_d__interface_8h_aea5f0f0946f0d2d8d48830e4e4f4ff7e}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL12}~(12)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a49f775339506539f103b9c85e9d59c6a}\label{_h_a_l___l_c_d__interface_8h_a49f775339506539f103b9c85e9d59c6a}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL13}~(13)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a9c09d7e1c05855edb7b14409b9669a94}\label{_h_a_l___l_c_d__interface_8h_a9c09d7e1c05855edb7b14409b9669a94}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL14}~(14)
+\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ad37ca98f6817df70cba935dcadfab3d5}\label{_h_a_l___l_c_d__interface_8h_ad37ca98f6817df70cba935dcadfab3d5}} 
+\#define {\bfseries HAL\+\_\+\+LCD\+\_\+\+COL15}~(15)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h_ad2640cdd90bf70b875ac512082059773}{HAL\+\_\+\+LCD\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+init is the LCD16x2 Initializing function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h_a9252027d006db95aa51d634f5afa746c}{HAL\+\_\+\+LCD\+\_\+display\+Character}} (u8\+\_\+t au8\+\_\+char\+Data)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+display\+Character is a function that displays the character passed as a parameter on the LCD16x2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h_ab2e6d67dc14d25903603e93bf8b2c1f4}{HAL\+\_\+\+LCD\+\_\+display\+String}} (u8\+\_\+t $\ast$pu8\+\_\+srt\+Data)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+display\+String is a function that displays a given string on the LCD16x2 screen (!\+Be careful of character overflows!) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h_a32b55f51265780302f1ca7d1fcca9a7a}{HAL\+\_\+\+LCD\+\_\+put\+At\+Loc}} (u8\+\_\+t au8\+\_\+row, u8\+\_\+t au8\+\_\+col)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+put\+At\+Loc is a function that moves the cursor of the LCD16x2 to the DDRAM address passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ab9fd87ad26b88440457f849f702be0ea}\label{_h_a_l___l_c_d__interface_8h_ab9fd87ad26b88440457f849f702be0ea}} 
+void \mbox{\hyperlink{_h_a_l___l_c_d__interface_8h_ab9fd87ad26b88440457f849f702be0ea}{HAL\+\_\+\+LCD\+\_\+clear\+Display}} (void)
+\begin{DoxyCompactList}\small\item\em HAL\+\_\+\+LCD\+\_\+clear\+Display is a function that clears the display of the LCD16x2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the h file that is used for our macros, function prototypes and declaration used in our LCD16x2 Driver. !\+PLEASE DON\textquotesingle{}T FORGET TO USE DELAYS! 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/01-\/2021 10\+:19\+:20 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a9252027d006db95aa51d634f5afa746c}\label{_h_a_l___l_c_d__interface_8h_a9252027d006db95aa51d634f5afa746c}} 
+\index{HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}!HAL\_LCD\_displayCharacter@{HAL\_LCD\_displayCharacter}}
+\index{HAL\_LCD\_displayCharacter@{HAL\_LCD\_displayCharacter}!HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_displayCharacter()}{HAL\_LCD\_displayCharacter()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+display\+Character (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+char\+Data }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+display\+Character is a function that displays the character passed as a parameter on the LCD16x2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+char\+Data} & is the data that will be passed to the LCD16x2. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ab2e6d67dc14d25903603e93bf8b2c1f4}\label{_h_a_l___l_c_d__interface_8h_ab2e6d67dc14d25903603e93bf8b2c1f4}} 
+\index{HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}!HAL\_LCD\_displayString@{HAL\_LCD\_displayString}}
+\index{HAL\_LCD\_displayString@{HAL\_LCD\_displayString}!HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_displayString()}{HAL\_LCD\_displayString()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+display\+String (\begin{DoxyParamCaption}\item[{u8\+\_\+t $\ast$}]{pu8\+\_\+srt\+Data }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+display\+String is a function that displays a given string on the LCD16x2 screen (!\+Be careful of character overflows!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu8\+\_\+srt\+Data} & is a pointer to the 8 bits of dat that will be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_ad2640cdd90bf70b875ac512082059773}\label{_h_a_l___l_c_d__interface_8h_ad2640cdd90bf70b875ac512082059773}} 
+\index{HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}!HAL\_LCD\_init@{HAL\_LCD\_init}}
+\index{HAL\_LCD\_init@{HAL\_LCD\_init}!HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_init()}{HAL\_LCD\_init()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+init is the LCD16x2 Initializing function. 
+
+SUPER IMPORTANT!//\mbox{\Hypertarget{_h_a_l___l_c_d__interface_8h_a32b55f51265780302f1ca7d1fcca9a7a}\label{_h_a_l___l_c_d__interface_8h_a32b55f51265780302f1ca7d1fcca9a7a}} 
+\index{HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}!HAL\_LCD\_putAtLoc@{HAL\_LCD\_putAtLoc}}
+\index{HAL\_LCD\_putAtLoc@{HAL\_LCD\_putAtLoc}!HAL\_LCD\_interface.h@{HAL\_LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_putAtLoc()}{HAL\_LCD\_putAtLoc()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+put\+At\+Loc (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+row,  }\item[{u8\+\_\+t}]{au8\+\_\+col }\end{DoxyParamCaption})}
+
+
+
+HAL\+\_\+\+LCD\+\_\+put\+At\+Loc is a function that moves the cursor of the LCD16x2 to the DDRAM address passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+row} & is the variable containing the row where we want to move (!\+DO NOT FORGET TO USE THE MACROS!) \\
+\hline
+{\em au8\+\_\+col} & is the variable containing the column where we want to move (!\+DO NOT FORGET TO USE THE MACROS!) \\
+\hline
+\end{DoxyParams}

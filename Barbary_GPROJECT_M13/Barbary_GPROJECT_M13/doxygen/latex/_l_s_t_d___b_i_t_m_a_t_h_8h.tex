@@ -1,0 +1,39 @@
+\hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h}{}\doxysection{LSTD/\+LSTD\+\_\+\+BITMATH.h File Reference}
+\label{_l_s_t_d___b_i_t_m_a_t_h_8h}\index{LSTD/LSTD\_BITMATH.h@{LSTD/LSTD\_BITMATH.h}}
+
+
+This is a standard library layer file that contains bitmath macros that can come in handy while coding.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_a9b591dc8e7d7eb34d90a11a11323507c}\label{_l_s_t_d___b_i_t_m_a_t_h_8h_a9b591dc8e7d7eb34d90a11a11323507c}} 
+\#define {\bfseries set\+Bit}(REG,  POS)~(REG $\vert$=  (1 $<$$<$ POS))
+\item 
+\mbox{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_abf7b2bf5865f884b0e79d52d1bbf256c}\label{_l_s_t_d___b_i_t_m_a_t_h_8h_abf7b2bf5865f884b0e79d52d1bbf256c}} 
+\#define {\bfseries clear\+Bit}(REG,  POS)~(REG \&= $\sim$(1 $<$$<$ POS))
+\item 
+\mbox{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_aa0a3508759ba801e8b92e9b1d2a19df5}\label{_l_s_t_d___b_i_t_m_a_t_h_8h_aa0a3508759ba801e8b92e9b1d2a19df5}} 
+\#define {\bfseries toggle\+Bit}(REG,  POS)~(REG $^\wedge$= (1 $<$$<$ POS))
+\item 
+\mbox{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_a75a58ab7aa1c392ad83f649374a7ba29}\label{_l_s_t_d___b_i_t_m_a_t_h_8h_a75a58ab7aa1c392ad83f649374a7ba29}} 
+\#define {\bfseries get\+Bit}(REG,  POS)~((REG $>$$>$ POS) \& 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a standard library layer file that contains bitmath macros that can come in handy while coding. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:Mohmbarbary@gmail.com}{\texttt{ Mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/01-\/29 10\+:19\+:20 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}

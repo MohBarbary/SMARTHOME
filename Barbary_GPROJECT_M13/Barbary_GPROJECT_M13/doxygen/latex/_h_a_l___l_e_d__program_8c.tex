@@ -1,0 +1,52 @@
+\hypertarget{_h_a_l___l_e_d__program_8c}{}\doxysection{HAL/\+LED/\+HAL\+\_\+\+LED\+\_\+program.c File Reference}
+\label{_h_a_l___l_e_d__program_8c}\index{HAL/LED/HAL\_LED\_program.c@{HAL/LED/HAL\_LED\_program.c}}
+
+
+Program file that contains the implementation for the function prototypes defined in the header file.  
+
+
+{\ttfamily \#include \char`\"{}LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL\+\_\+\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_h_a_l___l_e_d__program_8c_af88903a78a84b18316b4e65521851875}\label{_h_a_l___l_e_d__program_8c_af88903a78a84b18316b4e65521851875}} 
+void \mbox{\hyperlink{_h_a_l___l_e_d__program_8c_af88903a78a84b18316b4e65521851875}{HAL\+\_\+\+LED\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializer function that sets up the ports for given leds as OUTPUT using the GPIO DRIVER. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_a_l___l_e_d__program_8c_a959be45bc80a761469919995ec8dab05}{HAL\+\_\+\+LED\+\_\+power}} (u8\+\_\+t au8\+\_\+led\+Number)
+\begin{DoxyCompactList}\small\item\em Powers up given LEDS/\+LED MACROS using the GPIO DRIVER. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file that contains the implementation for the function prototypes defined in the header file. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed El Barbary (\href{mailto:mohmbarbary@gmail.com}{\texttt{ mohmbarbary@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2021 3\+:30\+:09 PM
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright GPL(c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_h_a_l___l_e_d__program_8c_a959be45bc80a761469919995ec8dab05}\label{_h_a_l___l_e_d__program_8c_a959be45bc80a761469919995ec8dab05}} 
+\index{HAL\_LED\_program.c@{HAL\_LED\_program.c}!HAL\_LED\_power@{HAL\_LED\_power}}
+\index{HAL\_LED\_power@{HAL\_LED\_power}!HAL\_LED\_program.c@{HAL\_LED\_program.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LED\_power()}{HAL\_LED\_power()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LED\+\_\+power (\begin{DoxyParamCaption}\item[{u8\+\_\+t}]{au8\+\_\+led\+Number }\end{DoxyParamCaption})}
+
+
+
+Powers up given LEDS/\+LED MACROS using the GPIO DRIVER. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em au8\+\_\+led\+Number} & variable that contains the number of the leds that will be used. \\
+\hline
+\end{DoxyParams}

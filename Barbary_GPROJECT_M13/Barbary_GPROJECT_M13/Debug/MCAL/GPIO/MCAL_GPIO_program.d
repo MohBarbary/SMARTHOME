@@ -1,0 +1,12 @@
+MCAL/GPIO/MCAL_GPIO_program.d MCAL/GPIO/MCAL_GPIO_program.o: \
+ ../MCAL/GPIO/MCAL_GPIO_program.c ../LSTD/LSTD_BITMATH.h \
+ ../LSTD/LSTD_TYPES.h ../MCAL/GPIO/MCAL_GPIO_private.h \
+ ../MCAL/GPIO/MCAL_GPIO_interface.h
+
+../LSTD/LSTD_BITMATH.h:
+
+../LSTD/LSTD_TYPES.h:
+
+../MCAL/GPIO/MCAL_GPIO_private.h:
+
+../MCAL/GPIO/MCAL_GPIO_interface.h:
