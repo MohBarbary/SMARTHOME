@@ -1,4 +1,4 @@
- # SMART HOME Graduation project by MohBarbary
+ # SMART HOME by MohBarbary
 
 In this repository you will be able to find the code documentation, ATMEL STUDIO Project file, Proteus project, Running code screenshots and BLOCK DIAGRAMS for the MASTER & SLAVE
 
